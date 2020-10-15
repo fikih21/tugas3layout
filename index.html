@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bagianAtas {
+    margin-top: 100px;
+    background-color: black;
+    display: flex;
+}
+
+
+.kiri img {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+.kiri {
+    width: 300px;
+}
+
+
+.kiri hr{
+   height: 7px;
+   background-color: white;
+   border: none;
+   margin: none;
+}
+
+.konten {
+    text-align: center;
+    margin: 10px 30px;
+    width: 710px;
+    color: white;
+}
+
+
+#bagianTengah .dua {
+    float: left;
+    margin: auto;
+    margin-left: 5px;
+    background-color: black;
+    width: 200px;
+    border: none;
+    height: 1px;
+}
+
+.konten p {
+    font-size: 17px;
+}
+
+.konten hr {
+    width: 200px;
+    margin: 10px auto;
+}
+.kanan {
+    width: 300px;
+}
+
+.kanan img {
+    width: 200px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Bagian Tengah */
+
+#bagianTengah {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    padding: 40px 40px 10px 40px;
+}
+
+#bagianTengah .satu {
+    float: left;
+    margin: auto;
+    margin-right: 5px;
+    background-color:  black;
+    width: 200px;
+    height: 1px;
+    border: none;
+}
+
+
+.container {
+    margin: 0 auto;
+}
+
+
+#bagianTengah p {
+    float: left;
+    font-size: 30px;
+    color:black;
+    font-weight: bold;
+}
+
+/* Bagian Bawah */
+
+#bagianBawah {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;;
+    /* position: relative; */
+    display: flex;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.rowKiri, .rowTengah, .rowKanan {
+    width: 500px;
+}
+
+.rowKiri img, .rowTengah img, .rowKanan img {
+    width: 150px;
+}
+
+#bagianBawah img {
+    display: block;
+    margin: 0 auto;
+}
+
+.isi {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 80px;
+    color: white;
+}
+
+
+.judul {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.latarbelakang {
+    background-color:rgb(53, 53, 53);
+    height: 250px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="bagianAtas">
+            <div class="kiri">
+                <img src="./asset/img/Group 1.png" alt="">
+                <hr>  
+            </div>
+            <div class="konten">
+                <p>Eicholtz is the preeminent name is luxury, cuttinge edge design. oflen immitated, <br> the
+                every item has hig design flare and has the build quality to match</p>
+                <hr>
+                <p><b>View the whire reange</b></p>
+            </div>
+            <div class="kanan"><img src="./empat.svg" alt="" style="width: 70px;"></div>
+        </div>
+
+        <div id="bagianTengah">
+            <hr class="satu">
+            <p><i>Buying</i> From US</p>
+            <hr class="dua">
+        </div>
+        
+        <div id="bagianBawah">
+           
+            <div class="rowKiri">
+                <img src="./satu.svg" alt="">
+                <div class="judul"><p style="color:  #ACCF3F;"><b>Free</b> delivery*</p></div>
+                <div class="isi">
+                    <p>
+                        We are swe that you will love your purchase from
+                        us. Ill horwnever if you're nol entirely sotislled with
+                        your goods. plase notify us with in 7 days with
+                        your insention
+                    </p>
+                </div>
+            </div>
+
+            <div class="rowTengah">
+                <img src="./dua.svg" alt="">
+                <div class="judul"><p style="color: #ACCF3F;"><b>Spread</b> the cost</p></div>
+                <div class="isi">
+                    <p>
+                        We are swe that you will love your purchase from
+                        us. Ill horwnever if you're nol entirely sotislled with
+                        your goods. plase notify us with in 7 days with
+                        your insention
+                    </p>
+                </div>
+            </div>
+            
+            <div class="rowKanan">
+                <img src="./tiga.svg" alt="">
+                <div class="judul"><p style="color: #ACCF3F;">Special <b>offers</b></p></div>
+                <div class="isi">
+                    <p>
+                        We are swe that you will love your purchase from
+                        us. Ill horwnever if you're nol entirely sotislled with
+                        your goods. plase notify us with in 7 days with
+                        your insention
+                    </p>
+                </div>
+            </div>
+
+            <div class="latarbelakang"></div>
+        </div>
+        <div class="latarbelakang"></div>
+    </div>
+</body>
+</html>
